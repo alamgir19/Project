@@ -1,0 +1,97 @@
+projectbundle_front_end_homepage:
+    path:     /project/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:index }
+
+teacher: 
+    path:     /teacher/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:teacher }
+
+parent: 
+    path:     /parent/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:parent }
+
+student_: 
+    path:     /student/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:student } 
+    
+login: 
+    path:     /project/login/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Secured:index }
+
+kidz: 
+    path:     /kids/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:kids }
+ 
+woman: 
+    path:     /woman/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:woman }
+
+contact: 
+    path:     /contact/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:contact }
+
+linkStatus:
+    path:     /feed-back/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:comments }
+
+link-update:
+    path:     /link-status/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:linkupdate }
+
+thankyou:
+    path:     /project/thank-you/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:thankyou }
+
+sitemap:
+    path:     /project/site-map/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:sitemap }
+
+event_detail:
+    path:     /project/events/{id}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Default:events , id:"$id" }
+
+welcome:
+    path:     /project/welcome/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Secured:welcome }
+
+slideshow:
+    path:     /project/slideshow/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Slide:index }
+
+slideadd:
+    path:     /slideshow/{id}/{action2}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Slide:addSlide , id:"$id", action2:"$action2"}
+
+slideupdate:
+    path:     /slideshow-action/{action}/{id}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Slide:slideUpdate , action:"$action", id:"$id" }
+    
+woman_program:
+    path:     /project/woman-program/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Woman:index }
+
+add-program:
+    path:     /project/woman-program/{id}/{action2}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Woman:addProgram , id:"$id", action2:"$action2"}
+
+program-update:
+    path:     /program-action/{action}/{id}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Woman:programUpdate , action:"$action", id:"$id" }
+
+event:
+    path:     /project/event/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Event:index }
+
+add-event:
+    path:     /project/event/{id}/{action2}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Event:addEvent , id:"$id", action2:"$action2"}
+
+event-update:
+    path:     /event-action/{action}/{id}
+    defaults: { _controller: ProjectbundleFrontEndBundle:Event:eventUpdate , action:"$action", id:"$id" }
+
+logout:
+    path:    /project/login/
+    defaults: { _controller: ProjectbundleFrontEndBundle:Secured:logout }
+   
+ 

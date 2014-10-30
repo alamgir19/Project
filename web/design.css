@@ -1,0 +1,20 @@
+/* 
+    Document   : design
+    Created on : Aug 30, 2014, 3:24:42 PM
+    Author     : Ahamad
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.h2
+{
+    font-family: Aril;
+    font: Aril;
+    font-size: 30px;
+    font-style: Bold;
+    color: Red;
+    
+}

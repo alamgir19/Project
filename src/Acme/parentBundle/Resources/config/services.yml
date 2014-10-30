@@ -1,0 +1,7 @@
+parameters:
+#    acmeparent.example.class: Acme\parentBundle\Example
+
+services:
+#    acmeparent.example:
+#        class: %acmeparent.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

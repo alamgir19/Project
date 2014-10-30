@@ -1,0 +1,587 @@
+@charset "utf-8";
+/* Nepal Trip Advisor  */
+html, body {
+	height: 100%;
+	min-height:100%;
+}
+body {
+	background-color: #edf1f4;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #636363;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+div, h1, h2, h3, h4, h5, h6, form, label, input, span, ul, li, p, a {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*:focus {
+	outline: none;
+}
+.clr {
+	clear: both;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+/*  TABLE  */
+thead td {
+	font-weight: bold;
+	background-color: #c8d5de;
+	text-transform: uppercase;
+	color: #303e48;
+}
+td {
+	padding: 5px;
+}
+table {
+	border: none;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin:5px 0 0 0;
+}
+
+table tr {
+	border-bottom: #c8d5de dotted 1px;
+}
+
+.frmAddEdit {
+	background-color:#e8edf1;
+	border:solid 1px #d1dde5;
+}
+.MsgError {
+	color:#F00;
+	font-size:14px;
+	font-weight:bold;
+}
+.MsgSuccess {
+	color:#390;
+	font-size:14px;
+	font-weight:bold;
+}
+/* These classes are used by the script as rollover effect for table 1 and 2 */
+	
+.tableRollOverEffect1 {
+	background-color: #001f59;
+	color: #FFF;
+}
+.tableRollOverEffect2 {
+	background-color: #000;
+	color: #FFF;
+}
+.tableRowClickEffect1 {
+	background-color: #F00;
+	color: #FFF;
+}
+.tableRowClickEffect2 {
+	background-color: #00F;
+	color: #FFF;
+}
+/* links */
+a {
+	color: #48517c;
+	text-decoration: none;
+	font-weight: normal;
+}
+a:visited {
+	color: #48517c;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border:none;
+}
+/* lists, blockquotes and paragraphs */
+p, ul, ol, blockquote {
+	margin: 0;
+	padding: 4px 0 4px 0;
+	font-size: 12px;
+	color: #636363;
+	line-height: 18px;
+}
+ul {
+	list-style: disc;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+#site {
+	background: #fff url(/Project/Symfony2Project/web/bundles/projectbundlefrontend/images/img/bg.jpg) no-repeat top center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#site-in {
+	background: #edf1f4 url(/Project/Symfony2Project/web/bundles/projectbundlefrontend/images/img/admin-bg.gif) repeat-x top;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+}
+#login {
+	width: 474px;
+	height: auto;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+.logoHold {
+	width: 454px;
+	height: 100px;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	text-align: center;
+}
+.coName {
+	width: 474px;
+	height: 24px;
+	margin: 0 0 20px 0;
+	padding: 4px 0 0 0;
+	text-align: center;
+	font-size: 24px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #001f59;
+}
+.signin-Form {
+	width: 434px;
+	height: 154px;
+	margin: 0 0 10px 0;
+	padding: 20px;
+}
+.tripsearchForm {
+	width: 434px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.tripsearchForm h2 {
+	width: auto;
+	height: 24px;
+	margin: 0 0 10px 0;
+	padding: 4px;
+	color: #636363;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+.rowLine {
+	width: 424px;
+	height: 34px;
+	margin: 0 0 4px 0;
+	padding: 5px;
+}
+.inputTitle {
+	display: block;
+	float: left;
+	width: 90px;
+	height: 28px;
+	margin: 0;
+	padding: 6px 0 0 54px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.inputArea {
+	display: block;
+	float: right;
+	width: 270px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
+}
+.inputBox {
+	margin: 0;
+	padding: 7px;
+	width: 206px;
+	height: auto;
+	border: #d2d2d2 solid 1px;
+	background-color: #f4f4f4;
+	color: #707070;
+	text-align: left;
+	font-size: 13px;
+}
+.formbutton {
+	display: block;
+	float: right;
+	width: 75px;
+	height: 28px;
+	padding: 0;
+	margin: 5px 54px 0 0;
+}
+.signin-ctrl {
+	width: 434px;
+	height: 34px;
+	margin: 0 0 20px 0;
+	padding: 38px 20px 38px 20px;
+	color: #4a4a4a;
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.signin-ctrl a {
+	margin: 0;
+	padding: 0 10px 0 10px;
+	color: #4a4a4a;
+	font-weight: normal;
+	font-size: 12px;
+}
+.signin-ctrl a:visited {
+	color: #4a4a4a;
+}
+.admin-header {
+	width: 980px;
+	height: 100px;
+	margin: 0 0 4px 0;
+	padding: 8px 10px 8px 10px;
+	overflow: hidden;
+}
+.admin-header-left {
+	display: block;
+	float: left;
+	width: 660px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.admin-header-right {
+	display: block;
+	float: right;
+	width: 300px;
+	height: 60px;
+	margin: 0;
+	padding: 20px 0 20px 0;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.page-header {
+	width: 980px;
+	height: 37px;
+	margin: 0;
+	padding: 10px;
+}
+.welcome-title {
+	display: block;
+	float: left;
+	width: 660px;
+	height: 26px;
+	margin: 0;
+	padding: 10px 0 0 0;
+	color: #48517c;
+	font-size: 20px;
+}
+.log-title {
+	display: block;
+	float: right;
+	width: 300px;
+	height: 26px;
+	margin: 0;
+	padding: 10px 0 10px 0;
+	text-align: right;
+	font-size: 14px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #48517c;
+}
+.page-wrap {
+	width: 998px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	border: #c8d5de solid 1px;
+}
+
+.page-wrap h6 {
+	display: block;
+	width: 150px;
+	height: auto;
+	margin: 20px 0 0 0;
+	padding: 10px 10px 10px 20px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #485159;
+	background: #dee6ec;
+	border: 1px solid #c8d5de;
+	border-left: none;
+	text-transform: uppercase;
+}
+.page-title {
+	width: 998px;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+	background: url(/Project/Symfony2Project/web/bundles/projectbundlefrontend/images/img/page-nav-bg.gif) repeat-x;
+}
+.homeicon {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 26px;
+	margin: 0;
+	padding: 11px 10px 5px 10px;
+	background: url(/Project/Symfony2Project/web/bundles/projectbundlefrontend/images/img/sept.gif) no-repeat right;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #485159;
+}
+.homeicon a {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #485159;
+	text-decoration: none;
+	font-weight: normal;
+}
+.homeicon a:visited {
+	color: #485159;
+	text-decoration: none;
+	font-weight: normal;
+}
+.adminNav {
+	display: block;
+	float: right;
+	width: 875px;
+	height: 26px;
+	margin: 0;
+	padding: 11px 10px 5px 10px;
+	text-align: left;
+	font-size: 14px;
+	color: #485159;
+}
+.adminNav a {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	color: #485159;
+}
+.adminNav a:visited {
+	text-decoration: none;
+	font-weight: normal;
+	color: #485159;
+}
+.page-content {
+	width: 958px;
+	height: auto;
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+.page-content h2 {
+	width: auto;
+	height: 24px;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: #dfe6ec dashed 1px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #485159;
+}
+.page-left {
+	display: block;
+	float: left;
+	width: 700px;
+	height: auto;
+	margin: 0;
+	padding: 10px;
+}
+.page-right {
+	display: block;
+	float: right;
+	width: 218px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.listmenu {
+	width: 218px;
+}
+.listmenu .headerbar {
+	width: auto;
+	height: 24px;
+	margin: 0 0 10px 0;
+	padding: 10px 0 5px 0;
+	border-bottom: #dfe6ec dashed 1px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #485159;
+}
+.listmenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.listmenu ul li {
+	padding-bottom: 2px;
+}
+.listmenu ul li a {
+	color: #697989;
+	background: url(../img/arrow.gif) no-repeat center left;
+	display: block;
+	padding: 2px 0;
+	padding-left: 17px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+.listmenu ul li a:visited {
+	color: #697989;
+	text-decoration: none;
+}
+.listmenu ul li a:hover {
+	color: #485159;
+}
+#footer-wrap {
+	clear: both;
+	background: #edf1f4 url(../img/footer.gif) repeat-x top;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#footer {
+	width: 960px;
+	height: 42px;
+	margin: 0 auto;
+	padding: 30px 20px 20px 20px;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+/*  BOX  
+.box-wrap {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 165px;
+	margin: 19px;
+	padding: 0;
+}
+.icon-wrap {
+	width: 150px;
+	height: 100px;
+	margin: 0 19px 10px 19px;
+	padding: 6px;
+	background: url(../img/icon-bg.gif) no-repeat bottom;
+}
+
+.icon-box-title {
+	width: 200px;
+	height: 43px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}*/
+
+/*  BOX  */
+.box-wrap {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 100px;
+	padding: 19px;
+	margin: 0;	
+}
+
+.box-wrap a {
+	display: block;
+	width: 178px;
+	height: 48px;
+	padding: 40px 10px 10px 10px;	
+	font-family: 'Oswald', sans-serif;
+	color: #48517c;
+	font-size: 18px;
+	border: 1px solid #e9e7e7;
+	box-shadow: #666 0 0px 2px 0px;
+	text-align: center;
+}
+
+.box-wrap a:hover {
+	color: #48517c;
+	box-shadow: #666 0 0 8px 0px;
+	background: #f2f2f2;
+	text-decoration: none;
+}
+
+/*  BOX  */
+.slide-wrap {
+	display: block;
+	float: left;
+	width: 200px;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+.slideImg-wrap {
+	width: 150px;
+	margin: 0 19px 10px 19px;
+	padding: 6px;
+	background: url(../img/icon-bg.gif) no-repeat bottom;
+}
+
+.slide-box-act{
+	width: 200px;
+	height: 43px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.slide-box-act a{
+	margin: 0 5px;
+	}
+
+.imgright {
+	float: right;
+	margin: 0 0 0 10px;
+	padding: 4px 0 0 0;
+	}
+
+a.lnkDelete:link{
+	background-image:url(../images/delele_inactive.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+a.lnkDelete:visited{
+	background-image:url(../images/delele_inactive.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+a.lnkDelete:hover{
+	background-image:url(../images/delele_active.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+
+a.lnkEdit:link{
+	background-image:url(../images/edit_inactive.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+a.lnkEdit:visited{
+	background-image:url(../images/edit_inactive.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+a.lnkEdit:hover{
+	background-image:url(../images/edit_active.png); background-repeat:no-repeat;
+	width:16px; height:16px; text-decoration:none; padding:1px;
+}
+

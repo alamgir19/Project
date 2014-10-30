@@ -1,0 +1,5 @@
+
+projectbundle_front_end:
+    resource: "@ProjectbundleFrontEndBundle/Resources/config/routing.yml"
+    prefix:   /
+
